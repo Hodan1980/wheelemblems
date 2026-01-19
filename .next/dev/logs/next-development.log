@@ -570,3 +570,7 @@ All exports of the module are statically known (It doesn't have dynamic exports)
 [21:35:31.522] Browser WARN    Image with src "/products/515.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
 [21:35:31.522] Browser WARN    Image with src "/products/614.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
 [21:35:31.522] Browser WARN    Image with src "/products/524.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[21:39:38.246] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[21:39:42.887] Browser WARN    Image with src "/how-it-works/design.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[21:39:42.887] Browser WARN    Image with src "/how-it-works/production.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[21:39:42.887] Browser WARN    Image with src "/how-it-works/application.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
