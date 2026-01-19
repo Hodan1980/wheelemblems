@@ -551,3 +551,22 @@ All exports of the module are statically known (It doesn't have dynamic exports)
 [20:30:22.752] Browser WARN    Image with src "/products/524.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
 [20:30:22.752] Browser WARN    Image with src "/products/614.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
 [20:42:04.279] Server  LOG     ✓ Compiled in 87ms
+[21:20:19.498] Server  LOG     ✓ Compiled in 65ms
+[21:20:34.392] Server  LOG     ✓ Compiled in 249ms
+[21:20:35.082] Browser WARN    Image with src "/how-it-works/design.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[21:20:35.083] Browser WARN    Image with src "/how-it-works/application.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[21:20:35.083] Browser WARN    Image with src "/how-it-works/production.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[21:35:08.721] Server  LOG     ✓ Compiled in 73ms
+[21:35:09.072] Browser WARN    Image with src "/how-it-works/design.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[21:35:09.072] Browser WARN    Image with src "/how-it-works/production.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[21:35:09.072] Browser WARN    Image with src "/how-it-works/application.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[21:35:25.448] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[21:35:25.772] Browser WARN    Image with src "/how-it-works/design.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[21:35:25.772] Browser WARN    Image with src "/how-it-works/production.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[21:35:25.772] Browser WARN    Image with src "/how-it-works/application.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[21:35:25.772] Browser WARN    Image with src "/products/1336.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[21:35:25.772] Browser WARN    Image with src "/products/502.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[21:35:25.772] Browser WARN    Image with src "/products/508.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[21:35:31.522] Browser WARN    Image with src "/products/515.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[21:35:31.522] Browser WARN    Image with src "/products/614.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[21:35:31.522] Browser WARN    Image with src "/products/524.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes

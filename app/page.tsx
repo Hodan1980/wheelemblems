@@ -2,6 +2,7 @@ import { Navigation } from "@/components/sections/01-Navigation";
 import { HeroScrollAnimation } from "@/components/sections/02-HeroScrollAnimation";
 import { SocialProof } from "@/components/sections/03-SocialProof";
 import { Features } from "@/components/sections/04-Features";
+import { HowItWorks } from "@/components/sections/05-HowItWorks";
 import { ProductShowcase } from "@/components/sections/06-ProductShowcase";
 import { Testimonials } from "@/components/sections/07-Testimonials";
 import { Pricing } from "@/components/sections/08-Pricing";
@@ -16,6 +17,7 @@ export default function Home() {
       <HeroScrollAnimation />
       <SocialProof />
       <Features />
+      <HowItWorks />
       <ProductShowcase />
       <Testimonials />
       <Pricing />
