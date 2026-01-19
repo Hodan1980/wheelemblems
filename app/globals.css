@@ -23,6 +23,18 @@ body {
   color: var(--foreground);
 }
 
+/* Performance: GPU acceleration for smooth animations */
+.gpu-accelerate {
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+/* Performance: Content visibility for off-screen sections */
+.content-auto {
+  content-visibility: auto;
+  contain-intrinsic-size: 0 500px;
+}
+
 /* Scroll Animation Utilities */
 .animate-slide-in {
   opacity: 0;
@@ -97,4 +109,48 @@ body {
 
 .animate-marquee-vertical {
   animation: marquee-vertical var(--duration) linear infinite;
+}
+
+/* Reduce motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+
+  .animate-slide-in,
+  .animate-slide-in.in-view,
+  .animate-scroll-left,
+  .animate-scroll-right,
+  .animate-marquee,
+  .animate-marquee-vertical {
+    animation: none;
+    opacity: 1;
+    filter: none;
+    transform: none;
+  }
+}
+
+/* Performance: Optimize paint for fixed elements */
+.fixed {
+  contain: layout style;
+}
+
+/* Performance: Optimize images */
+img {
+  content-visibility: auto;
+}
+
+/* Focus styles for accessibility */
+:focus-visible {
+  outline: 2px solid var(--color-red);
+  outline-offset: 2px;
+}
+
+/* Skip link styles */
+.sr-only:focus {
+  position: absolute;
+  width: auto;
+  height: auto;
+  padding: 1rem;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
 }

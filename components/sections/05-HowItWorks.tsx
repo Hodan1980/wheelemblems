@@ -8,62 +8,64 @@ import { ArrowRight } from "lucide-react";
 const steps = [
     {
         number: "01",
-        title: "Design or Upload",
-        description: "Choose from our curated collection of wheel emblem designs or upload your own custom artwork. Our intuitive editor makes it easy to visualize your new look.",
+        title: "Design Your Wheel Emblems",
+        description: "Choose from our curated collection of wheel emblem designs or upload your own custom artwork for domed stickers. Our intuitive editor makes it easy to visualize your new center wheel covers.",
         image: "/how-it-works/design.webp",
-        alt: "Design Interface"
+        alt: "Design custom wheel emblems interface"
     },
     {
         number: "02",
         title: "We Print & Dome",
-        description: "We print your design in 4K resolution and apply a UV-resistant, clear polyurethane resin dome. This creates a stunning 3D effect that is scratch-proof and weatherproof.",
+        description: "We print your car decals in 4K resolution and apply a UV-resistant, clear polyurethane resin dome. This creates stunning 3D domed stickers that are scratch-proof and weatherproof.",
         image: "/how-it-works/production.webp",
-        alt: "Doming Process"
+        alt: "Domed stickers and resin emblems production process"
     },
     {
         number: "03",
         title: "Peel & Stick",
-        description: "Application is a breeze. Just clean your wheel center cap, peel off the backing, and stick on your new emblem. Our industrial adhesive ensures it stays put.",
+        description: "Installation is easy. Just clean your center wheel cover, peel off the backing, and stick on your new hub cap stickers. Our industrial adhesive ensures your wheel emblems stay put.",
         image: "/how-it-works/application.webp",
-        alt: "Application"
+        alt: "Installing hub cap stickers on center wheel covers"
     }
 ];
 
 export function HowItWorks() {
     return (
-        <section id="how-it-works" className="py-24 bg-black relative overflow-hidden">
+        <section id="how-it-works" className="py-24 bg-black relative overflow-hidden" aria-labelledby="how-it-works-heading">
             {/* Background elements */}
-            <div className="absolute top-1/2 left-0 w-[500px] h-[500px] bg-red-900/10 rounded-full blur-[120px] -translate-y-1/2 -translate-x-1/2 pointer-events-none" />
+            <div className="absolute top-1/2 left-0 w-[500px] h-[500px] bg-red-900/10 rounded-full blur-[120px] -translate-y-1/2 -translate-x-1/2 pointer-events-none" aria-hidden="true" />
 
             <div className="container mx-auto px-4">
                 <AnimatedBlock className="text-center mb-16 max-w-2xl mx-auto">
-                    <h2 className="text-4xl md:text-5xl font-bebas text-white mb-4">
-                        How It <span className="text-red-600">Works</span>
+                    <h2 id="how-it-works-heading" className="text-4xl md:text-5xl font-bebas text-white mb-4">
+                        How Wheel Emblems <span className="text-red-600">Work</span>
                     </h2>
                     <p className="text-lg text-white/60">
-                        Transforming your wheels is easier than you think. Three simple steps to a fresh new look.
+                        Transforming your center wheel covers with premium domed stickers is easier than you think. Three simple steps to custom hub cap stickers.
                     </p>
                 </AnimatedBlock>
 
-                <div className="flex flex-col md:flex-row gap-8 md:gap-4 relative">
+                <div className="flex flex-col md:flex-row gap-8 md:gap-4 relative" role="list" aria-label="Steps to create custom wheel emblems">
                     {/* Connecting line for desktop */}
-                    <div className="hidden md:block absolute top-[160px] left-[16%] right-[16%] h-0.5 bg-gradient-to-r from-transparent via-red-900/50 to-transparent z-0" />
+                    <div className="hidden md:block absolute top-[160px] left-[16%] right-[16%] h-0.5 bg-gradient-to-r from-transparent via-red-900/50 to-transparent z-0" aria-hidden="true" />
 
                     {steps.map((step, index) => (
-                        <div key={step.number} className="flex-1 relative z-10">
+                        <article key={step.number} className="flex-1 relative z-10" role="listitem">
                             <AnimatedBlock delay={index * 0.2} className="flex flex-col items-center text-center">
                                 <div className="relative w-full aspect-video mb-8 rounded-2xl overflow-hidden border border-white/10 group">
                                     <Image
                                         src={step.image}
                                         alt={step.alt}
                                         fill
+                                        sizes="(max-width: 768px) 100vw, 33vw"
+                                        loading="lazy"
                                         className="object-cover transition-transform duration-700 group-hover:scale-105"
                                     />
-                                    <div className="absolute inset-0 bg-gradient-to-tr from-black/60 to-transparent" />
+                                    <div className="absolute inset-0 bg-gradient-to-tr from-black/60 to-transparent" aria-hidden="true" />
 
                                     {/* Number Badge */}
                                     <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 w-16 h-16 rounded-full bg-black border border-white/10 flex items-center justify-center shadow-xl shadow-black">
-                                        <span className="font-bebas text-3xl text-red-600">{step.number}</span>
+                                        <span className="font-bebas text-3xl text-red-600" aria-hidden="true">{step.number}</span>
                                     </div>
                                 </div>
 
@@ -74,14 +76,14 @@ export function HowItWorks() {
                                     </p>
                                 </div>
                             </AnimatedBlock>
-                        </div>
+                        </article>
                     ))}
                 </div>
 
                 <div className="mt-16 text-center">
                     <a href="https://hubcapstickers.com/stickers/wheel-emblems/" target="_blank" rel="noopener noreferrer">
                         <Button size="lg" className="rounded-full">
-                            Get Started Now <ArrowRight className="ml-2 w-5 h-5" />
+                            Order Custom Wheel Emblems <ArrowRight className="ml-2 w-5 h-5" aria-hidden="true" />
                         </Button>
                     </a>
                 </div>
