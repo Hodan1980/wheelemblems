@@ -48,7 +48,7 @@ export function ProductShowcase() {
 
                 <div className="mt-12 text-center">
                     <a href="https://hubcapstickers.com/stickers/wheel-emblems/?brands=[1]" target="_blank" rel="noopener noreferrer">
-                        <Button className="rounded-full">
+                        <Button size="lg" className="rounded-full">
                             View Full Gallery
                         </Button>
                     </a>

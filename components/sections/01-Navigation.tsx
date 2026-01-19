@@ -42,7 +42,7 @@ export function Navigation() {
                 </nav>
 
                 <a href="https://hubcapstickers.com/stickers/wheel-emblems/" target="_blank" rel="noopener noreferrer" className="hidden md:block">
-                    <Button size="sm" className="rounded-full">
+                    <Button size="lg" className="rounded-full">
                         Order Now
                     </Button>
                 </a>

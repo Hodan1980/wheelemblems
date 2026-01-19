@@ -164,11 +164,11 @@ var _s = __turbopack_context__.k.signature();
 function Navigation() {
     _s();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(11);
-    if ($[0] !== "14722eee7c6b2c7db46f76001587cb35562dbeb246d10a16cc9bff7df778e7ea") {
+    if ($[0] !== "1e923616bae7ba31f8178945b3478ba5a3ab2753dfac9d8de8da4f9306666e43") {
         for(let $i = 0; $i < 11; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "14722eee7c6b2c7db46f76001587cb35562dbeb246d10a16cc9bff7df778e7ea";
+        $[0] = "1e923616bae7ba31f8178945b3478ba5a3ab2753dfac9d8de8da4f9306666e43";
     }
     const [scrolled, setScrolled] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     let t0;
@@ -239,7 +239,7 @@ function Navigation() {
             rel: "noopener noreferrer",
             className: "hidden md:block",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$Button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
-                size: "sm",
+                size: "lg",
                 className: "rounded-full",
                 children: "Order Now"
             }, void 0, false, {
@@ -2427,11 +2427,11 @@ const products = [
 ];
 function ProductShowcase() {
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(4);
-    if ($[0] !== "170db4097e5f078afcbc1eaf99fdc696485c218223757e5c2b4b1e2ac8fc90ab") {
+    if ($[0] !== "66073cdbf6ea4bd08ec588dcd2489c448a095da36e1110a9d6fb13db56bf4f4d") {
         for(let $i = 0; $i < 4; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "170db4097e5f078afcbc1eaf99fdc696485c218223757e5c2b4b1e2ac8fc90ab";
+        $[0] = "66073cdbf6ea4bd08ec588dcd2489c448a095da36e1110a9d6fb13db56bf4f4d";
     }
     let t0;
     if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
@@ -2505,6 +2505,7 @@ function ProductShowcase() {
                             target: "_blank",
                             rel: "noopener noreferrer",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$Button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
+                                size: "lg",
                                 className: "rounded-full",
                                 children: "View Full Gallery"
                             }, void 0, false, {
