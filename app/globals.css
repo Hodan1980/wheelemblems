@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+@theme {
+  --font-bebas: var(--font-bebas);
+  --font-sans: var(--font-jakarta);
+
+  --color-gold: #C9A227;
+  --color-dark: #050505;
+  --color-red: #E11D48;
+  --color-brand-red: #E11D48;
+
+  --color-background: var(--color-dark);
+  --color-foreground: #ededed;
+}
+
+:root {
+  --background: #050505;
+  --foreground: #ededed;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+/* Scroll Animation Utilities */
+.animate-slide-in {
+  opacity: 0;
+  filter: blur(10px);
+  transform: translate3d(0, 2rem, 0);
+}
+
+.animate-slide-in.in-view {
+  animation: slideInUp 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+@keyframes slideInUp {
+  to {
+    opacity: 1;
+    filter: blur(0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes scroll-left {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes scroll-right {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+.animate-scroll-left {
+  animation: scroll-left var(--speed, 40s) linear infinite;
+}
+
+.animate-scroll-right {
+  animation: scroll-right var(--speed, 40s) linear infinite;
+}
+
+/* Magic UI Marquee Animations */
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+
+@keyframes marquee-vertical {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(calc(-100% - var(--gap)));
+  }
+}
+
+.animate-marquee {
+  animation: marquee var(--duration) linear infinite;
+}
+
+.animate-marquee-vertical {
+  animation: marquee-vertical var(--duration) linear infinite;
+}
