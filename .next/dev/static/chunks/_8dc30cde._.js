@@ -152,6 +152,8 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$config$2f$site$2e$ts__$5b$ap
 var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/lib/utils.ts [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$Button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/ui/Button.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/x.js [app-client] (ecmascript) <export default as X>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$menu$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Menu$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/menu.js [app-client] (ecmascript) <export default as Menu>");
 ;
 var _s = __turbopack_context__.k.signature();
 "use client";
@@ -161,16 +163,18 @@ var _s = __turbopack_context__.k.signature();
 ;
 ;
 ;
+;
 function Navigation() {
     _s();
-    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(11);
-    if ($[0] !== "1e923616bae7ba31f8178945b3478ba5a3ab2753dfac9d8de8da4f9306666e43") {
-        for(let $i = 0; $i < 11; $i += 1){
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(30);
+    if ($[0] !== "97346e50188d621af7b430131b2c58a02e8d374dabb0f8b53d8bcdfb9634b8f6") {
+        for(let $i = 0; $i < 30; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "1e923616bae7ba31f8178945b3478ba5a3ab2753dfac9d8de8da4f9306666e43";
+        $[0] = "97346e50188d621af7b430131b2c58a02e8d374dabb0f8b53d8bcdfb9634b8f6";
     }
     const [scrolled, setScrolled] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    const [mobileMenuOpen, setMobileMenuOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     let t0;
     let t1;
     if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
@@ -193,47 +197,71 @@ function Navigation() {
         t1 = $[2];
     }
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])(t0, t1);
-    const t2 = scrolled ? "bg-black/80 backdrop-blur-md py-4 border-b border-white/10" : "bg-transparent py-6";
+    let t2;
     let t3;
-    if ($[3] !== t2) {
-        t3 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("fixed top-0 left-0 right-0 z-50 transition-all duration-300", t2);
-        $[3] = t2;
-        $[4] = t3;
+    if ($[3] !== mobileMenuOpen) {
+        t2 = ({
+            "Navigation[useEffect()]": ()=>{
+                if (mobileMenuOpen) {
+                    document.body.style.overflow = "hidden";
+                } else {
+                    document.body.style.overflow = "";
+                }
+                return _temp;
+            }
+        })["Navigation[useEffect()]"];
+        t3 = [
+            mobileMenuOpen
+        ];
+        $[3] = mobileMenuOpen;
+        $[4] = t2;
+        $[5] = t3;
     } else {
-        t3 = $[4];
+        t2 = $[4];
+        t3 = $[5];
     }
-    let t4;
-    if ($[5] === Symbol.for("react.memo_cache_sentinel")) {
-        t4 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])(t2, t3);
+    const t4 = scrolled ? "bg-black/80 backdrop-blur-md py-4 border-b border-white/10" : "bg-transparent py-6";
+    let t5;
+    if ($[6] !== t4) {
+        t5 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("fixed top-0 left-0 right-0 z-50 transition-all duration-300", t4);
+        $[6] = t4;
+        $[7] = t5;
+    } else {
+        t5 = $[7];
+    }
+    let t6;
+    if ($[8] === Symbol.for("react.memo_cache_sentinel")) {
+        t6 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
             href: "#",
             className: "text-3xl font-bebas tracking-widest text-white uppercase",
             children: __TURBOPACK__imported__module__$5b$project$5d2f$config$2f$site$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["siteConfig"].name
         }, void 0, false, {
             fileName: "[project]/components/sections/01-Navigation.tsx",
-            lineNumber: 51,
+            lineNumber: 75,
             columnNumber: 10
         }, this);
-        $[5] = t4;
+        $[8] = t6;
     } else {
-        t4 = $[5];
+        t6 = $[8];
     }
-    let t5;
-    if ($[6] === Symbol.for("react.memo_cache_sentinel")) {
-        t5 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
+    let t7;
+    if ($[9] === Symbol.for("react.memo_cache_sentinel")) {
+        t7 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
             className: "hidden md:flex items-center gap-8",
             children: __TURBOPACK__imported__module__$5b$project$5d2f$config$2f$navigation$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["navigation"].map(_NavigationNavigationMap)
         }, void 0, false, {
             fileName: "[project]/components/sections/01-Navigation.tsx",
-            lineNumber: 58,
+            lineNumber: 82,
             columnNumber: 10
         }, this);
-        $[6] = t5;
+        $[9] = t7;
     } else {
-        t5 = $[6];
+        t7 = $[9];
     }
-    let t6;
-    if ($[7] === Symbol.for("react.memo_cache_sentinel")) {
-        t6 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+    let t8;
+    if ($[10] === Symbol.for("react.memo_cache_sentinel")) {
+        t8 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
             href: "https://hubcapstickers.com/stickers/wheel-emblems/",
             target: "_blank",
             rel: "noopener noreferrer",
@@ -244,81 +272,193 @@ function Navigation() {
                 children: "Order Now"
             }, void 0, false, {
                 fileName: "[project]/components/sections/01-Navigation.tsx",
-                lineNumber: 65,
+                lineNumber: 89,
                 columnNumber: 141
             }, this)
         }, void 0, false, {
             fileName: "[project]/components/sections/01-Navigation.tsx",
-            lineNumber: 65,
+            lineNumber: 89,
             columnNumber: 10
         }, this);
-        $[7] = t6;
-    } else {
-        t6 = $[7];
-    }
-    let t7;
-    if ($[8] === Symbol.for("react.memo_cache_sentinel")) {
-        t7 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "container mx-auto px-4 flex items-center justify-between",
-            children: [
-                t4,
-                t5,
-                t6,
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                    className: "md:hidden text-white",
-                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-                        className: "w-6 h-6",
-                        fill: "none",
-                        stroke: "currentColor",
-                        viewBox: "0 0 24 24",
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                            strokeLinecap: "round",
-                            strokeLinejoin: "round",
-                            strokeWidth: 2,
-                            d: "M4 6h16M4 12h16m-7 6h7"
-                        }, void 0, false, {
-                            fileName: "[project]/components/sections/01-Navigation.tsx",
-                            lineNumber: 72,
-                            columnNumber: 216
-                        }, this)
-                    }, void 0, false, {
-                        fileName: "[project]/components/sections/01-Navigation.tsx",
-                        lineNumber: 72,
-                        columnNumber: 137
-                    }, this)
-                }, void 0, false, {
-                    fileName: "[project]/components/sections/01-Navigation.tsx",
-                    lineNumber: 72,
-                    columnNumber: 96
-                }, this)
-            ]
-        }, void 0, true, {
-            fileName: "[project]/components/sections/01-Navigation.tsx",
-            lineNumber: 72,
-            columnNumber: 10
-        }, this);
-        $[8] = t7;
-    } else {
-        t7 = $[8];
-    }
-    let t8;
-    if ($[9] !== t3) {
-        t8 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("header", {
-            className: t3,
-            children: t7
-        }, void 0, false, {
-            fileName: "[project]/components/sections/01-Navigation.tsx",
-            lineNumber: 79,
-            columnNumber: 10
-        }, this);
-        $[9] = t3;
         $[10] = t8;
     } else {
         t8 = $[10];
     }
-    return t8;
+    let t9;
+    if ($[11] !== mobileMenuOpen) {
+        t9 = ({
+            "Navigation[<button>.onClick]": ()=>setMobileMenuOpen(!mobileMenuOpen)
+        })["Navigation[<button>.onClick]"];
+        $[11] = mobileMenuOpen;
+        $[12] = t9;
+    } else {
+        t9 = $[12];
+    }
+    let t10;
+    if ($[13] !== mobileMenuOpen) {
+        t10 = mobileMenuOpen ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__["X"], {
+            className: "w-7 h-7"
+        }, void 0, false, {
+            fileName: "[project]/components/sections/01-Navigation.tsx",
+            lineNumber: 106,
+            columnNumber: 28
+        }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$menu$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Menu$3e$__["Menu"], {
+            className: "w-7 h-7"
+        }, void 0, false, {
+            fileName: "[project]/components/sections/01-Navigation.tsx",
+            lineNumber: 106,
+            columnNumber: 56
+        }, this);
+        $[13] = mobileMenuOpen;
+        $[14] = t10;
+    } else {
+        t10 = $[14];
+    }
+    let t11;
+    if ($[15] !== t10 || $[16] !== t9) {
+        t11 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "container mx-auto px-4 flex items-center justify-between",
+            children: [
+                t6,
+                t7,
+                t8,
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                    className: "md:hidden text-white p-2",
+                    onClick: t9,
+                    "aria-label": "Toggle mobile menu",
+                    children: t10
+                }, void 0, false, {
+                    fileName: "[project]/components/sections/01-Navigation.tsx",
+                    lineNumber: 114,
+                    columnNumber: 97
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/components/sections/01-Navigation.tsx",
+            lineNumber: 114,
+            columnNumber: 11
+        }, this);
+        $[15] = t10;
+        $[16] = t9;
+        $[17] = t11;
+    } else {
+        t11 = $[17];
+    }
+    let t12;
+    if ($[18] !== t11 || $[19] !== t5) {
+        t12 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("header", {
+            className: t5,
+            children: t11
+        }, void 0, false, {
+            fileName: "[project]/components/sections/01-Navigation.tsx",
+            lineNumber: 123,
+            columnNumber: 11
+        }, this);
+        $[18] = t11;
+        $[19] = t5;
+        $[20] = t12;
+    } else {
+        t12 = $[20];
+    }
+    const t13 = mobileMenuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none";
+    let t14;
+    if ($[21] !== t13) {
+        t14 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("fixed inset-0 z-40 bg-black/95 backdrop-blur-lg transition-all duration-300 md:hidden", t13);
+        $[21] = t13;
+        $[22] = t14;
+    } else {
+        t14 = $[22];
+    }
+    let t15;
+    if ($[23] === Symbol.for("react.memo_cache_sentinel")) {
+        t15 = __TURBOPACK__imported__module__$5b$project$5d2f$config$2f$navigation$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["navigation"].map({
+            "Navigation[navigation.map()]": (item_0)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                    href: item_0.href,
+                    onClick: {
+                        "Navigation[navigation.map() > <a>.onClick]": ()=>setMobileMenuOpen(false)
+                    }["Navigation[navigation.map() > <a>.onClick]"],
+                    className: "text-4xl font-bebas text-white hover:text-red-500 transition-colors uppercase tracking-widest",
+                    children: item_0.name
+                }, item_0.name, false, {
+                    fileName: "[project]/components/sections/01-Navigation.tsx",
+                    lineNumber: 142,
+                    columnNumber: 49
+                }, this)
+        }["Navigation[navigation.map()]"]);
+        $[23] = t15;
+    } else {
+        t15 = $[23];
+    }
+    let t16;
+    if ($[24] === Symbol.for("react.memo_cache_sentinel")) {
+        t16 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "flex flex-col items-center justify-center h-full gap-8 pt-20",
+            children: [
+                t15,
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                    href: "https://hubcapstickers.com/stickers/wheel-emblems/",
+                    target: "_blank",
+                    rel: "noopener noreferrer",
+                    className: "mt-4",
+                    onClick: {
+                        "Navigation[<a>.onClick]": ()=>setMobileMenuOpen(false)
+                    }["Navigation[<a>.onClick]"],
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$Button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
+                        size: "lg",
+                        className: "rounded-full",
+                        children: "Order Now"
+                    }, void 0, false, {
+                        fileName: "[project]/components/sections/01-Navigation.tsx",
+                        lineNumber: 154,
+                        columnNumber: 37
+                    }, this)
+                }, void 0, false, {
+                    fileName: "[project]/components/sections/01-Navigation.tsx",
+                    lineNumber: 152,
+                    columnNumber: 94
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/components/sections/01-Navigation.tsx",
+            lineNumber: 152,
+            columnNumber: 11
+        }, this);
+        $[24] = t16;
+    } else {
+        t16 = $[24];
+    }
+    let t17;
+    if ($[25] !== t14) {
+        t17 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: t14,
+            children: t16
+        }, void 0, false, {
+            fileName: "[project]/components/sections/01-Navigation.tsx",
+            lineNumber: 161,
+            columnNumber: 11
+        }, this);
+        $[25] = t14;
+        $[26] = t17;
+    } else {
+        t17 = $[26];
+    }
+    let t18;
+    if ($[27] !== t12 || $[28] !== t17) {
+        t18 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
+            children: [
+                t12,
+                t17
+            ]
+        }, void 0, true);
+        $[27] = t12;
+        $[28] = t17;
+        $[29] = t18;
+    } else {
+        t18 = $[29];
+    }
+    return t18;
 }
-_s(Navigation, "tQtW9FyKD+Ut/6k+f0BCbABprL4=");
+_s(Navigation, "3dkQbJ67xTX3HLMt6OvJfxq79dI=");
 _c = Navigation;
 function _NavigationNavigationMap(item) {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -327,9 +467,12 @@ function _NavigationNavigationMap(item) {
         children: item.name
     }, item.name, false, {
         fileName: "[project]/components/sections/01-Navigation.tsx",
-        lineNumber: 88,
+        lineNumber: 179,
         columnNumber: 10
     }, this);
+}
+function _temp() {
+    document.body.style.overflow = "";
 }
 var _c;
 __turbopack_context__.k.register(_c, "Navigation");

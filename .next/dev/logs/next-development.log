@@ -10,3 +10,4 @@
 [00:00:55.654] Browser WARN    Image with src "/products/515.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
 [00:00:55.654] Browser WARN    Image with src "/products/524.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
 [00:00:55.654] Browser WARN    Image with src "/products/614.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:25:03.859] Server  LOG     ✓ Compiled in 470ms
