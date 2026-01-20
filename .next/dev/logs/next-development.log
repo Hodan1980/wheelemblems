@@ -1,13 +1,58 @@
-[00:00:01.198] Server  LOG     ✓ Ready in 846ms
-[00:00:43.860] Server  LOG     ○ Compiling / ...
-[00:00:45.889] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:50.603] Browser WARN    Image with src "/how-it-works/design.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:50.603] Browser WARN    Image with src "/how-it-works/production.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:50.603] Browser WARN    Image with src "/how-it-works/application.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:54.518] Browser WARN    Image with src "/products/1336.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:54.518] Browser WARN    Image with src "/products/502.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:54.518] Browser WARN    Image with src "/products/508.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:55.654] Browser WARN    Image with src "/products/515.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:55.654] Browser WARN    Image with src "/products/524.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:55.654] Browser WARN    Image with src "/products/614.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:25:03.859] Server  LOG     ✓ Compiled in 470ms
+[00:00:01.306] Server  LOG     ✓ Ready in 920ms
+[00:00:04.539] Server  LOG     ○ Compiling / ...
+[00:00:07.822] Server  WARN    ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[00:00:09.083] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:10.496] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <InnerScrollAndFocusHandler segmentPath={[...]} focusAndScrollRef={{apply:false, ...}}>
+      <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
+        <LoadingBoundary name="/" loading={null}>
+          <HTTPAccessFallbackBoundary notFound={<SegmentViewNode>} forbidden={undefined} unauthorized={undefined}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<SegmentViewNode>} forbidden={undefined} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} ...>
+                    <SegmentViewNode type="page" pagePath="page.tsx">
+                      <SegmentTrieNode>
+                      <Home>
+                        <a>
+                        <Home>
+                          <Navigation>
+                            <header className="fixed top-...">
+                              <div className="container ...">
+                                <a>
+                                <nav>
+                                <a
+                                  href="https://hubcapstickers.com/stickers/wheel-emblems/"
+                                  target="_blank"
+                                  rel="noopener noreferrer"
++                                 className="hidden md:block"
+-                                 className="items-center justify-center whitespace-nowrap font-bebas ring-offset-back..."
+                                >
+                                  <_c size="lg" className="rounded-full">
++                                   <button
++                                     className="inline-flex items-center justify-center whitespace-nowrap font-bebas ..."
++                                     ref={null}
++                                   >
+-                                   Order Now
+                                ...
+                            ...
+                        ...
+                    ...
+                  ...
+      ...
+
+[00:00:20.496] Browser ERROR   unhandledRejection: i: Failed to connect to MetaMask
+[00:00:49.596] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:59.538] Browser ERROR   unhandledRejection: i: Failed to connect to MetaMask

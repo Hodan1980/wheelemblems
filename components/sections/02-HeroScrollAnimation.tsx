@@ -193,7 +193,7 @@ function HeroTextOverlay({ item, scrollProgress }: { item: HeroContentItem; scro
             >
                 <div className="bg-black/60 backdrop-blur-sm rounded-2xl p-8 md:p-12 flex flex-col items-center text-center">
                     <h1
-                        className="text-6xl md:text-[20rem] font-bebas text-white drop-shadow-2xl leading-none whitespace-nowrap tracking-tighter"
+                        className="text-7xl md:text-9xl lg:text-[12rem] xl:text-[16rem] font-bebas text-white drop-shadow-2xl leading-none whitespace-nowrap tracking-tighter"
                         style={{
                             transform: 'scaleX(0.85)',
                             transformOrigin: 'center'
@@ -202,18 +202,18 @@ function HeroTextOverlay({ item, scrollProgress }: { item: HeroContentItem; scro
                         {item.title}
                     </h1>
                     {item.subtitle && (
-                        <p className="text-2xl md:text-4xl text-white/90 max-w-2xl font-light mt-6 mb-10 drop-shadow-md text-center">
+                        <p className="text-xl md:text-3xl text-white/90 max-w-md md:max-w-2xl font-light mt-4 md:mt-6 mb-8 md:mb-10 drop-shadow-md text-center px-4">
                             {item.subtitle}
                         </p>
                     )}
 
                     {item.isCta && (
                         <div className="flex gap-4 pointer-events-auto justify-center">
-                            <a href="https://www.hubcapstickers.com" target="_blank" rel="noopener noreferrer">
-                                <Button size="lg" className="rounded-full">
+                            <Button asChild size="lg" className="rounded-full">
+                                <a href="https://www.hubcapstickers.com" target="_blank" rel="noopener noreferrer">
                                     Learn More
-                                </Button>
-                            </a>
+                                </a>
+                            </Button>
                         </div>
                     )}
                 </div>

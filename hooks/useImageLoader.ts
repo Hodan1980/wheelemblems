@@ -17,7 +17,7 @@ export function useImageLoader(frameCount: number) {
             loadedImages.length = frameCount;
 
             const promises = Array.from({ length: frameCount }, (_, i) => {
-                return new Promise<void>((resolve, reject) => {
+                return new Promise<void>((resolve) => {
                     const img = new Image();
                     // Format: frame_00.webp ... frame_79.webp
                     // i < 10 ? `0${i}` : `${i}`

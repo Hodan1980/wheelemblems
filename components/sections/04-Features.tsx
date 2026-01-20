@@ -1,7 +1,7 @@
 "use client";
 
 import { features } from '@/config/features';
-import { Card, CardHeader, CardTitle, CardDescription } from '@/components/ui/Card';
+import { SpotlightCard } from '@/components/ui/SpotlightCard';
 import { AnimatedBlock } from '@/components/ui/AnimatedBlock';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/Button';
@@ -15,11 +15,11 @@ export function Features() {
             <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-red-600/5 rounded-full blur-[120px] translate-x-1/2 translate-y-1/2 pointer-events-none" aria-hidden="true" />
 
             <div className="container mx-auto px-4">
-                <AnimatedBlock className="text-center mb-16 max-w-2xl mx-auto">
-                    <h2 id="features-heading" className="text-4xl md:text-5xl font-bebas text-white mb-4">
+                <AnimatedBlock className="text-center mb-10 md:mb-16 max-w-2xl mx-auto">
+                    <h2 id="features-heading" className="text-4xl md:text-5xl font-bebas text-white mb-4 tracking-wider">
                         Premium Wheel Emblems <span className="text-red-600">Features</span>
                     </h2>
-                    <p className="text-lg text-white/70">
+                    <p className="text-lg text-white/60">
                         We don't just print stickers. We create industrial-grade domed stickers and resin emblems designed to outlast your car.
                     </p>
                 </AnimatedBlock>
@@ -31,16 +31,16 @@ export function Features() {
                             delay={index * 0.1}
                             className={cn("h-full", feature.className)}
                         >
-                            <Card className="relative h-full bg-white/5 hover:bg-white/10 transition-colors border-white/10 group overflow-hidden" role="listitem">
-                                <CardHeader>
-                                    <div className="w-12 h-12 rounded-lg bg-red-600/20 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300" aria-hidden="true">
-                                        <feature.icon className="w-6 h-6 text-red-500" />
+                            <SpotlightCard className="h-full group" spotlightColor="rgba(225, 29, 72, 0.2)">
+                                <div className="p-6 h-full flex flex-col">
+                                    <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-red-600/30 to-red-900/10 flex items-center justify-center mb-6 border border-red-500/20 shadow-[0_0_15px_rgba(225,29,72,0.15)] group-hover:scale-110 group-hover:shadow-[0_0_25px_rgba(225,29,72,0.3)] transition-all duration-300">
+                                        <feature.icon className="w-7 h-7 text-red-500 drop-shadow-md" />
                                     </div>
-                                    <CardTitle className="mb-2 text-white font-bebas text-2xl tracking-wide">{feature.title}</CardTitle>
-                                    <CardDescription className="text-white/60 text-base">
+                                    <h3 className="mb-3 text-white font-bebas text-3xl tracking-wide group-hover:text-red-500 transition-colors duration-300">{feature.title}</h3>
+                                    <p className="text-white/60 text-base leading-relaxed">
                                         {feature.description}
-                                    </CardDescription>
-                                </CardHeader>
+                                    </p>
+                                </div>
                                 <BorderBeam
                                     duration={8}
                                     size={200}
@@ -48,17 +48,17 @@ export function Features() {
                                     colorTo="#ff6b6b"
                                     delay={index * 0.5}
                                 />
-                            </Card>
+                            </SpotlightCard>
                         </AnimatedBlock>
                     ))}
                 </div>
 
                 <div className="mt-16 text-center">
-                    <a href="https://hubcapstickers.com/stickers/wheel-emblems/" target="_blank" rel="noopener noreferrer">
-                        <Button size="lg" className="rounded-full">
+                    <Button asChild size="lg" className="rounded-full">
+                        <a href="https://hubcapstickers.com/stickers/wheel-emblems/" target="_blank" rel="noopener noreferrer">
                             Shop Wheel Emblems & Domed Stickers
-                        </Button>
-                    </a>
+                        </a>
+                    </Button>
                 </div>
             </div>
         </section>

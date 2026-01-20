@@ -2,7 +2,7 @@
 
 import { faq } from '@/config/faq';
 import { AnimatedBlock } from '@/components/ui/AnimatedBlock';
-import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from '@/components/ui/Accordion';
+import { AccordionItem, AccordionTrigger, AccordionContent } from '@/components/ui/Accordion';
 import { useState } from 'react';
 
 export function FAQ() {

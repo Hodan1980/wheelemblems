@@ -55,12 +55,12 @@ export function Pricing() {
                                 ))}
                             </ul>
 
-                            <a href="https://hubcapstickers.com/stickers/wheel-emblems/" target="_blank" rel="noopener noreferrer" className="w-full block">
-                                <Button size="lg" className="w-full rounded-full">
+                            <Button asChild size="lg" className="w-full rounded-full">
+                                <a href="https://hubcapstickers.com/stickers/wheel-emblems/" target="_blank" rel="noopener noreferrer" className="w-full inline-flex">
                                     <Zap className="mr-2 h-5 w-5 fill-current" aria-hidden="true" />
                                     {plan.cta}
-                                </Button>
-                            </a>
+                                </a>
+                            </Button>
                             <p className="text-xs text-center text-white/30 mt-4">
                                 Free shipping on wheel emblems orders over €50
                             </p>

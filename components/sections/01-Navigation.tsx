@@ -56,11 +56,11 @@ export function Navigation() {
                         ))}
                     </nav>
 
-                    <a href="https://hubcapstickers.com/stickers/wheel-emblems/" target="_blank" rel="noopener noreferrer" className="hidden md:block">
-                        <Button size="lg" className="rounded-full">
+                    <Button asChild size="lg" className="rounded-full hidden md:inline-flex">
+                        <a href="https://hubcapstickers.com/stickers/wheel-emblems/" target="_blank" rel="noopener noreferrer">
                             Order Now
-                        </Button>
-                    </a>
+                        </a>
+                    </Button>
 
                     {/* Mobile Menu Button */}
                     <button
@@ -96,17 +96,16 @@ export function Navigation() {
                         </a>
                     ))}
 
-                    <a
-                        href="https://hubcapstickers.com/stickers/wheel-emblems/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="mt-4"
-                        onClick={() => setMobileMenuOpen(false)}
-                    >
-                        <Button size="lg" className="rounded-full">
+                    <Button asChild size="lg" className="rounded-full mt-4">
+                        <a
+                            href="https://hubcapstickers.com/stickers/wheel-emblems/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            onClick={() => setMobileMenuOpen(false)}
+                        >
                             Order Now
-                        </Button>
-                    </a>
+                        </a>
+                    </Button>
                 </div>
             </div>
         </>

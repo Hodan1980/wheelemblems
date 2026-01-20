@@ -52,7 +52,7 @@ export function HowItWorks() {
                     {steps.map((step, index) => (
                         <article key={step.number} className="flex-1 relative z-10" role="listitem">
                             <AnimatedBlock delay={index * 0.2} className="flex flex-col items-center text-center">
-                                <div className="relative w-full aspect-video mb-8 rounded-2xl overflow-hidden border border-white/10 group">
+                                <div className="relative w-full aspect-video mb-8 rounded-2xl overflow-hidden glass-panel group transition-all duration-500 hover:shadow-[0_0_40px_rgba(225,29,72,0.15)] hover:border-red-500/30">
                                     <Image
                                         src={step.image}
                                         alt={step.alt}
@@ -61,7 +61,7 @@ export function HowItWorks() {
                                         loading="lazy"
                                         className="object-cover transition-transform duration-700 group-hover:scale-105"
                                     />
-                                    <div className="absolute inset-0 bg-gradient-to-tr from-black/60 to-transparent" aria-hidden="true" />
+                                    <div className="absolute inset-0 bg-gradient-to-tr from-black/80 via-black/20 to-transparent" aria-hidden="true" />
 
                                     {/* Number Badge */}
                                     <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 w-16 h-16 rounded-full bg-black border border-white/10 flex items-center justify-center shadow-xl shadow-black">
@@ -81,11 +81,11 @@ export function HowItWorks() {
                 </div>
 
                 <div className="mt-16 text-center">
-                    <a href="https://hubcapstickers.com/stickers/wheel-emblems/" target="_blank" rel="noopener noreferrer">
-                        <Button size="lg" className="rounded-full">
+                    <Button asChild size="lg" className="rounded-full">
+                        <a href="https://hubcapstickers.com/stickers/wheel-emblems/" target="_blank" rel="noopener noreferrer">
                             Order Custom Wheel Emblems <ArrowRight className="ml-2 w-5 h-5" aria-hidden="true" />
-                        </Button>
-                    </a>
+                        </a>
+                    </Button>
                 </div>
             </div>
         </section>

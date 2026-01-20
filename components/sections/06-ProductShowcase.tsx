@@ -48,11 +48,11 @@ export function ProductShowcase() {
                 </div>
 
                 <div className="mt-12 text-center">
-                    <a href="https://hubcapstickers.com/stickers/wheel-emblems/?brands=[1]" target="_blank" rel="noopener noreferrer">
-                        <Button size="lg" className="rounded-full">
+                    <Button asChild size="lg" className="rounded-full">
+                        <a href="https://hubcapstickers.com/stickers/wheel-emblems/?brands=[1]" target="_blank" rel="noopener noreferrer">
                             Browse All Wheel Emblems
-                        </Button>
-                    </a>
+                        </a>
+                    </Button>
                 </div>
             </div>
         </section>
